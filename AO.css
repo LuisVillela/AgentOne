@@ -1,10 +1,26 @@
-#orb-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: black;
+/* Reset de márgenes y scroll */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Permitir scroll horizontal */
+    overflow-y: hidden; /* Evitar scroll vertical */
+    background-color: #000; /* Fondo negro opcional */
+}
+
+/* Contenedor de la imagen, pegado arriba */
+#image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa todo el ancho */
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+}
+
+/* Imagen principal */
+#main-image {
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Altura automática */
+    display: block;
+    object-fit: cover; /* Evita espacios en blanco si es necesario */
 }
